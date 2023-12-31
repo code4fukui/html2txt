@@ -1,4 +1,5 @@
 import { HTMLParser } from "https://js.sabae.cc/HTMLParser.js";
+import { decodeHTML } from "./decodeHTML.js";
 
 /*
 nodeType
@@ -29,7 +30,7 @@ export const html2txt = (html) => {
       }
     }
     if (dom.nodeType == 3) {
-      res.push(dom._rawText);
+      res.push(decodeHTML(dom._rawText));
     }
     for (const c of dom.childNodes) {
       getText(c);

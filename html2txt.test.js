@@ -14,3 +14,6 @@ Deno.test("img", () => {
 Deno.test("p", () => {
   t.assertEquals(html2txt("<p>abc</p><p>def</p>"), "abc\ndef");
 });
+Deno.test("decode", () => {
+  t.assertEquals(html2txt("<p>a&amp;bc</p><p>&gt;def&lt;</p>"), "a&bc\n>def<");
+});
