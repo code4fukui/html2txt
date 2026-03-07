@@ -40,5 +40,7 @@ export const html2txt = (html) => {
     }
   };
   getText(dom);
-  return res.join("").trim();
+  const text = res.join("").trim();
+  const text2 = text.replace(/\n{2,}/g, "\n");
+  return text2;
 };

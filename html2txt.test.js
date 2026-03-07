@@ -17,3 +17,6 @@ Deno.test("p", () => {
 Deno.test("decode", () => {
   t.assertEquals(html2txt("<p>a&amp;bc</p><p>&gt;def&lt;</p>"), "a&bc\n>def<");
 });
+Deno.test("multi br", () => {
+  t.assertEquals(html2txt("a<br><br><br>b"), "a\nb");
+});
