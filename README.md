@@ -1,5 +1,7 @@
 # html2txt
 
+> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
+
 Convert HTML to plaintext.
 
 ## Features

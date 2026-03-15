@@ -1,10 +1,6 @@
 # html2txt
 
-HTML文書からテキストを抽出するJavaScriptライブラリです。`<script>`や`<style>`などのタグは除外され、プレーンなテキストが生成されます。
-
-## デモ
-
-デモは[こちら](https://code4fukui.github.io/html2txt/)で確認できます。
+HTMLからテキストを抽出するJavaScriptライブラリです。HTMLタグやスクリプト、スタイルを除外し、プレーンなテキストを生成します。
 
 ## 機能
 
