@@ -24,4 +24,4 @@ console.log(html2txt("<img src=png>abc<br>def"));
 ```
 
 ## License
-MIT License
+MIT License — see [LICENSE](LICENSE).
